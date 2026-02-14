@@ -20,7 +20,7 @@ export const Headers = () => {
 
   return (
     <>
-      <header className="bg-surface shadow-md relative z-40">
+      <header className="fixed top-0 left-0 w-full z-50 bg-surface shadow-md backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-24">
             <NavLink to="/" className="text-2xl font-bold text-white">

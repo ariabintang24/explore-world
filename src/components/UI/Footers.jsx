@@ -14,32 +14,7 @@ export const Footers = () => {
 
   return (
     <footer className="bg-[#151414] text-white">
-      {/* TOP SECTION */}
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 lg:grid-cols-3 lg:text-left">
-          {footerContact.map((contact, index) => {
-            const { icon, title, details } = contact;
-
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center gap-4 lg:flex-row lg:items-start"
-              >
-                {/* ICON */}
-                <div className="text-4xl text-blue-500">
-                  {footerIcon[icon]}
-                </div>
-
-                {/* TEXT */}
-                <div>
-                  <p className="text-lg font-semibold">{title}</p>
-                  <p className="text-sm text-white/60">{details}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      
 
       {/* BOTTOM SECTION */}
       <div className="border-t border-white/10 bg-[#111]">
@@ -56,18 +31,18 @@ export const Footers = () => {
           {/* MENU */}
           <ul className="flex flex-wrap items-center justify-center gap-6 md:justify-end">
             <li>
-              <NavLink to="/#" className="hover:text-blue-500 transition">
-                Privacy Policy
+              <NavLink to="/about" className="hover:text-blue-500 transition">
+                About
               </NavLink>
             </li>
             <li>
-              <NavLink to="/#" className="hover:text-blue-500 transition">
-                Terms & Conditions
+              <NavLink to="/country" className="hover:text-blue-500 transition">
+                Country
               </NavLink>
             </li>
             <li>
-              <NavLink to="/#" className="hover:text-blue-500 transition">
-                Contact Us
+              <NavLink to="/contact" className="hover:text-blue-500 transition">
+                Contact
               </NavLink>
             </li>
           </ul>
