@@ -64,19 +64,20 @@ export const Headers = () => {
           />
 
           {/* DRAWER */}
-          <div className="absolute top-0 left-0 w-full h-[100dvh] bg-[#151414] shadow-2xl flex flex-col">
-            {/* SAFE AREA FIX */}
-            <div className="flex justify-end p-6 pt-[env(safe-area-inset-top)]">
+          <div className="absolute inset-0 flex flex-col bg-[#151414]">
+            {/* CLOSE BUTTON */}
+            <div className="flex justify-end px-6 pt-10">
               <button
                 onClick={() => setShow(false)}
-                className="text-3xl text-white"
+                className="text-3xl text-white hover:text-red-400 transition"
               >
                 <IoClose />
               </button>
             </div>
 
+            {/* MENU CENTERED */}
             <div className="flex flex-1 items-center justify-center">
-              <ul className="flex flex-col items-center gap-10 text-xl text-white">
+              <ul className="flex flex-col items-center gap-12 text-2xl font-medium text-white">
                 <li>
                   <NavLink to="/" onClick={() => setShow(false)}>
                     Home
