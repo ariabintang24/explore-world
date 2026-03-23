@@ -18,7 +18,7 @@ Users can search, filter, and view detailed information about each country, incl
 
 ## 📸 Preview
 
-<img src="./screenshots/home.png" width="700"/>
+<img src="./previews/landing_explorrre.png" width="700"/>
 
 ---
 
